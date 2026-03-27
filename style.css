@@ -78,7 +78,7 @@ h2 {
     cursor: pointer;
 }
 
-.animado:hover
+.animado:hover,
 .animado:focus {
     transform: scale(1.03);
 }
