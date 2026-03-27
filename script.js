@@ -56,7 +56,7 @@ function expandLogin() {
             <!-- Botão entrar -->
             <button type="submit" class="btn btn-login animado">ENTRAR</button>
             
-            <!-- Link esqueceu senha sem mostrar # no canto -->
+            <!-- Esqueceu senha -->
             <span class="text-secondary animado" onclick="alert('Enviaremos um e-mail com instruções para recuperar sua senha.')">
             Esqueceu a senha?
             </span>
@@ -132,3 +132,24 @@ function toggleSenha() {
         }
     }
 }
+
+// Login funcionado
+document.addEventListener("submit", function (e) {
+    if (e.target.classList.contains("login-form")) {
+        e.preventDefault();
+
+        const email = document.getElementById("email").value;
+        const senha = document.getElementById("senha").value;
+
+        if (email === "" || senha === "") {
+            alert("Preencha todos os campos!");
+            return;
+        }
+
+        // Sucesso
+        alert("Login efetuado com sucesso!");
+
+        // Volta pra tela inicial
+        goBack();
+    }
+});
