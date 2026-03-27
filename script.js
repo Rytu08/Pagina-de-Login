@@ -57,7 +57,7 @@ function expandLogin() {
             <button type="submit" class="btn btn-login animado">ENTRAR</button>
             
             <!-- Link esqueceu senha sem mostrar # no canto -->
-            <span class="text-secondary animado" onclick="alert('Redirecionar para recuperação de senha')">
+            <span class="text-secondary animado" onclick="alert('Enviaremos um e-mail com instruções para recuperar sua senha.')">
             Esqueceu a senha?
             </span>
             </form>
